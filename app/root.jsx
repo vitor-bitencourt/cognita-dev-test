@@ -6,6 +6,13 @@ import {
   ScrollRestoration,
 } from "@remix-run/react";
 
+import stylesheet from "./tailwind.css";
+
+export const links = () => [
+  { rel: "stylesheet", href: stylesheet },
+];
+
+
 export function Layout({ children }) {
   return (
     <html lang="en">
@@ -15,7 +22,7 @@ export function Layout({ children }) {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body className="bg-ivory">
         {children}
         <ScrollRestoration />
         <Scripts />
