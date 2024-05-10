@@ -8,6 +8,7 @@ import {
 
 import stylesheet from "./tailwind.css";
 
+
 export const links = () => [
   { rel: "stylesheet", href: stylesheet },
 ];
@@ -23,9 +24,10 @@ export function Layout({ children }) {
         <Links />
       </head>
       <body className="bg-ivory">
-        {children}
-        <ScrollRestoration />
         <Scripts />
+        <ScrollRestoration />
+        {children}
+
       </body>
     </html>
   );
