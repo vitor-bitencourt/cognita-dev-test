@@ -71,7 +71,7 @@ neo4j.auth.basic('username', 'password')
 
 #### The + Adicionar Passo or Cancel button it's not working
 
-During the development I faced a problem with the state management of the Form opening when I tested the project in another PC, I tried to fix with another way of state management like Redux but still not working in my second machine, so I am reminding here that if you face this problem, just change the 'useState' of the 'showForm' to True and you will see the form to create new nodes.
+During the development I faced a problem with the state management of the Form opening when I tested the project in another PC, I tried to fix with another way of state management like Redux but still not working in my second machine, so I am reminding here that if you face this problem, just change the 'useState' of the 'showForm' to True and you will see the form to create new nodes, you can find the 'showForm' at the file 'explore.$trailId.jsx'.
 
 
 
