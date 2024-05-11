@@ -1,5 +1,6 @@
-import { deleteStep } from '../services/stepService';
 import {  redirect } from '@remix-run/node';
+import { deleteStep } from '../services/stepService';
+
 
 export const loader = async ({ params }) => {
   const { trailId, stepId } = params;

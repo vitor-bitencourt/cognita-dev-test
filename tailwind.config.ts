@@ -14,6 +14,9 @@ export default {
         lightdark: '#4F4B5C',
       },
     },
+    fontFamily: {
+      sans: ['General Sans', 'sans-serif'],
+    },
   },
   plugins: [],
 } satisfies Config
