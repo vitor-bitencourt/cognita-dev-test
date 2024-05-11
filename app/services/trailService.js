@@ -2,6 +2,8 @@ import driver from '../utils/db';
 
 export async function getTrailAndSteps(trailId) {
   const session = driver.session();
+
+  //Verifies if has a trail with the given id and nodes
   const result = await session.run(
     'MATCH (t:Trail {id: $trailId}) OPTIONAL MATCH (t)-[:HAS_STEP]->(s:Step) RETURN t, COLLECT(s) as steps',
     { trailId }

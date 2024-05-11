@@ -9,11 +9,36 @@ import StepForm from '../components/StepForm';
 
 
 export const loader = async ({ params }) => {
+  
+  /*Creating the DB Nodes*/
+  /*CREATE (s:Step { 
+    id: 'step-1', 
+    title: 'O primeiro passo', 
+    content: 'O conteúdo do primeiro passo' 
+  })
+  CREATE (t:Trail {
+    id: 'trail-1',
+    title: 'A primeira trilha'
+  })  
+  CREATE (tm:Theme {
+    id: 'theme-1',
+    title: 'O primeiro tema'
+  })
+  CREATE (a:Academy {
+    id: 'academy-1',
+    title: 'A primeira academia'
+  })*/
+
+  /*Creating the Relationships*/
+  //MATCH (s:Step { id: 'step-1'}), (t:Trail { id: 'trail-1' }) CREATE (t)-[:HAS_STEP]->(s)
+  //MATCH (tm:Theme { id: 'theme-1'}), (t:Trail { id: 'trail-1' }) CREATE (tm)-[:HAS_TRAIL]->(t)
+  //MATCH (a:Academy { id: 'academy-1'}), (tm:Theme { id: 'theme-1' }) CREATE (a)-[:HAS_THEME]->(tm)
+  
   const { trailId } = params;
-  console.log('trailId:', trailId);
+
   const data = await getTrailAndSteps(trailId);
-  console.log(data)
   return json(data);
+
 };
 
 
