@@ -46,7 +46,7 @@ export default function StepForm(props) {
             ></textarea>
           </div>
           <div className="flex justify-end gap-x-6 mt-10">
-            <button className="w-[140px] h-12 p-3 rounded-xl text-purple text-base font-semibold py-3 px-4 bg-white border border-purple hover:bg-purple hover:text-white" type="button" onClick={() => props.setTrigger(false)}>Cancelar</button>
+            <button className="w-[140px] h-12 p-3 rounded-xl text-purple text-base font-semibold py-3 px-4 bg-white border border-lightpurple hover:bg-lightpurple hover:text-white" type="button" onClick={() => props.setTrigger(false)}>Cancelar</button>
             <button className="w-[140px] h-12 p-3 rounded-xl text-white text-base font-semibold py-3 px-4 bg-purple" type="submit">Criar passo</button>
           </div>
         </Form>

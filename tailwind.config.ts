@@ -1,3 +1,4 @@
+import { light } from '@mui/material/styles/createPalette'
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -6,6 +7,7 @@ export default {
     extend: {
       colors: {
         purple: '#7357FF',
+        lightpurple: '#E2DCFF',
         gray: '#E2E2E4',
         scndgray: '#F7F7F8',
         thrdgray: '#ECECED',

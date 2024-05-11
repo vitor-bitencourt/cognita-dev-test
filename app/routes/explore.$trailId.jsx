@@ -57,7 +57,7 @@ export default function Explore() {
         {showForm && <StepForm trigger={showForm} setTrigger={setShowForm} />}
 
         {steps.length > 0 && <Steps steps={steps} />}
-        {steps.length === 0 && <p>Nenhum passo encontrado.</p>}
+        {steps.length === 0 && <div className="flex flex-col items-center h-32 mt-12 border border-lightpurple rounded-lg bg-white"><h3 className="mt-12 font-medium text-2xl text-purple">Nenhum passo foi encontrado. Mas você pode criar o seu!</h3></div>}
       </div>
   );
 }
