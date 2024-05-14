@@ -9,6 +9,9 @@ Project proposed by Cognita to test the skills of a developer, this project it's
 
 **Server:** Neo4j
 
+## Screenshots
+
+![App Screenshot](https://github.com/vitor-bitencourt/cognita-dev-test/blob/main/public/cognittron.png?raw=true)
 
 ## Referencies that helped me
 
