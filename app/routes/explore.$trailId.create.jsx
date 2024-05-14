@@ -15,7 +15,11 @@ export async function action({ request, params }) {
   const title = form.get("title");
   const content = form.get("content");
   
-  await createStep(id, title, content, trailId);
+  const result = await createStep(id, title, content, trailId);
+
+  if (!result.success) {
+    return redirect(`/explore/${trailId}?error`);
+  }
 
   return redirect(`/explore/${trailId}`)
 

@@ -10,7 +10,7 @@ export default function StepForm(props) {
   return(props.trigger) ? (  
     <div className="h-screen w-screen fixed inset-0 top-32 z-20">
       <div className="opacity-100 flex justify-center">
-        <Form method="post"  action="/explore/trail-1/create"  className="w-[680px] h-[586px] bg-white p-12 rounded-3xl">
+        <Form method="post"  action="/explore/trail-1/create"  className="w-[680px] h-[586px] bg-white p-12 rounded-3xl" onSubmit={() => props.setTrigger(false)}>
           <h2 className="text-3xl leading-10 font-semibold text-dark mb-10">Adicionar Passo</h2>
           <div className="flex flex-col mb-4">
             <label className="text-sm leading-6 font-semibold mb-1 text-lightdark"  htmlFor="id">id</label>
