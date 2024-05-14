@@ -76,7 +76,9 @@ neo4j.auth.basic('username', 'password')
 
 During the development I faced a problem with the state management of the Form opening when I tested the project in another PC, I tried to fix with another way of state management like Redux but still not working in my second machine, so I am reminding here that if you face this problem, just change the 'useState' of the 'showForm' to True and you will see the form to create new nodes, you can find the 'showForm' at the file 'explore.$trailId.jsx'.
 
+### NOTE: Fixed the Issue
 
+After the feedback received by and experienced developer, I discovered that the problem was with the TailwindCSS importation, then I fixed and also made some changes in the design and the validation to save the new Steps without repeating the IDs. Now if you clone the project to your machine, it will work correctly 😎. I intend to implement the update step feature, I will be back.
 
 
 ## Lessons Learned
